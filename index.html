@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            document.addEventListener('DOMContentLoaded', function(){
+                let story = document.querySelectorAll('.story');
+                for (let i = 0; i < story.length; i++) {
+                    story[i].addEventListener('mouseover', function() {
+                        story[i].style.fontSize='40px';
+                        story[i].style.color='red';})
+                    story[i].addEventListener('mouseout', function() {
+                        story[i].style.fontSize='25px';
+                        story[i].style.color='blue';
+
+                    });
+                }
+            });
+        </script>
+
+
+    </head>
+    <body class="bg">
+        <artical>
+            <div class="container">
+                <h1 class="top">English Short Stories</h1>
+                <menu class="margin">
+                    <li><a href="page1.html" class="a story">The Bogey-Beast</a>
+                    <li><a href="page2.html" class="a story">A Magic Ring</a>
+                    <li><a href="page3.html" class="a story">Hit the Floor</a>
+                </menu>
+                <div>
+                    <img src="engl.jpeg" alt="England" class="image">
+                </div>
+                    <blockquote cite="https://englishfox.ru/korotkie-rasskazy-na-anglijskom-yazyke.html" class="b">source</blockquote>
+                </nav>
+            </div>
+        </artical>
+    </body>
+</html>
